@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,6 +34,12 @@
         <div>
                 <a href="reg.php">Нет аккаунта?</a>
             </div>
+            <?php
+            if ($_SESSION["message"]) {
+                echo '<p class="wind">'.$_SESSION["message"].'</p>';
+                unset($_SESSION['message']);
+            }
+            ?>
     </form>
 
 </body>
