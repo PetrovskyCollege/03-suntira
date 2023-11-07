@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<form  action="index.php" class="form2" Method="POST">
+<form  action="inc/signup.php" class="form2" Method="POST">
     <h1>Добро пожаловать!</h1>
         <div class="row">
             <div class="col-md-3">
