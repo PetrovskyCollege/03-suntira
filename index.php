@@ -10,7 +10,7 @@ session_start();
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<form class="form1" method="POST">
+<form action="inc/singin.php" class="form1" method="POST">
     <h1>Добро пожаловать!</h1>
         <div class="row">
             <div class="col-md-3">
