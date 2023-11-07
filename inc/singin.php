@@ -12,7 +12,7 @@ $_SESSION['user'] =[
     "id" => $user['id'],
     "login"=> $user['login'],
 
-]
+];
 } else{
     $_SESSION['message']='Неверный логин или пароль';
     header ('Location: ../index.php');
