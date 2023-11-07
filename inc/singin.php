@@ -5,7 +5,7 @@ require_once 'connect.php';
 $login = $_POST['login'];
 $pass = $_POST['pass'];
 
-$check_user = mysqli_query($connect, "SELECT * FROM 'user' WHERE 'login'='$login' AND 'pass'='$pass'");
+$check_user = mysqli_query($connect, "SELECT * FROM `user` WHERE `login`='$login' AND `password`='$pass'");
 if (mysqli_num_rows($check_user) > 0){
 
 } else{

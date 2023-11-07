@@ -35,7 +35,7 @@ session_start();
                 <a href="reg.php">Нет аккаунта?</a>
             </div>
             <?php
-            if ($_SESSION["message"]) {
+            if (isset($_SESSION["message"])) {
                 echo '<p class="wind">'.$_SESSION["message"].'</p>';
                 unset($_SESSION['message']);
             }
